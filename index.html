@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Student Portal</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="logo">Student Portal</h1>
+    </header>
+    <div class="main_content">
+        <div class="search_bar">
+
+            <div class="search_bar">
+                <input type="text" id="input" placeholder="Search">
+                <button class="search" id="search" onclick="search()">Search</button>
+            </div>
+
+        </div>
+        <div class="sorters">
+            <div class="search" onclick="sortAZ()">Sort A <i class="fa-solid fa-arrow-right"></i> Z</div>
+            <div class="search" onclick="sortZA()">Sort Z <i class="fa-solid fa-arrow-right"></i> A</div>
+            <div class="search" onclick="sortByMarks()">Sort By Marks</div>
+            <div class="search" onclick="sortByPassing()">Sort By Passing</div>
+            <div class="search" onclick="sortByClass()">Sort By Class</div>
+            <div class="search" onclick="sortedByGender()">Sort By Gender</div>
+        </div>
+        <table class="">
+            <thead>
+                <tr>
+                    <th class="id">ID</th>
+                    <th class="name">Name</th>
+                    <th class="gender">Gender</th>
+                    <th class="class">Class</th>
+                    <th class="marks">Marks</th>
+                    <th class="passing">Passing</th>
+                    <th class="email">Email</th>
+                </tr>
+            </thead>
+            <tbody id="data-output">
+            </tbody>
+        </table>
+    </div>
+</body>
+
+    <script src="./script.js"></script>
+
+
+</html>
